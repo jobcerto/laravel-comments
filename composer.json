@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jobcerto\\LaravelComments\\": "src"
+            "Jobcerto\\Comments\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jobcerto\\LaravelComments\\Tests\\": "tests"
+            "Jobcerto\\Comments\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,11 +44,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jobcerto\\LaravelComments\\LaravelCommentsServiceProvider"
-            ],
-            "aliases": {
-                "LaravelComments": "Jobcerto\\LaravelComments\\LaravelCommentsFacade"
-            }
+                "Jobcerto\\Comments\\CommentsServiceProvider"
+            ]
         }
     }
 }
